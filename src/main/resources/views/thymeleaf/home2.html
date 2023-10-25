@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<section>
+    <p>What are the numbers? <span th:text="${numbers}"></span></p>
+    <h1 th:if="${numbers.size() > 0}">Hurray, we've got numbers!</h1>
+    <h1 th:unless="${numbers.size() > 0}">No numbers. Sorry dude.</h1>
+</section>
+</body>
+</html>

@@ -11,7 +11,7 @@ import java.util.Map;
 
 @Controller("/views")
 public class MyController {
-    
+
     @Get("/pebble2")
     public ModelAndView<Map<String, Object>> pebble2() {
         Map<String, Object> map = new HashMap<>();
@@ -21,6 +21,6 @@ public class MyController {
         numbers.add(3);
         numbers.add(4);
         map.put("numbers", numbers);
-        return new ModelAndView<>("pebble/home2", map);
+        return new ModelAndView<>("thymeleaf/home2", map);
     }
 }

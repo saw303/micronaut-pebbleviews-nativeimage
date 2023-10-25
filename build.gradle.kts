@@ -3,7 +3,7 @@ import io.micronaut.gradle.docker.MicronautDockerfile
 import org.apache.tools.ant.taskdefs.condition.Os
 
 plugins {
-    id("groovy") 
+    id("groovy")
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.0.4"
     id("io.micronaut.aot") version "4.0.4"
@@ -20,7 +20,7 @@ dependencies {
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
-    implementation("io.micronaut.views:micronaut-views-pebble")
+    implementation("io.micronaut.views:micronaut-views-thymeleaf")
     compileOnly("io.micronaut:micronaut-http-client")
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("io.micronaut:micronaut-http-client")
