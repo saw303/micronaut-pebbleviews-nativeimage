@@ -57,7 +57,7 @@ micronaut {
 }
 
 val projectVersion = System.getenv("GITHUB_REF_NAME")?: "dummy"
-val imageName = "ghcr.io/saw303/nativeimagepebbleview"
+val imageName = "ghcr.io/saw303/nativeimagepebbleview-thymeleaf"
 
 tasks.named<DockerBuildImage>("dockerBuild") {
     images.add("${imageName}:${projectVersion}")

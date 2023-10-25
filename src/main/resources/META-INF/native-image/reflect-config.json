@@ -1,0 +1,12 @@
+[
+  {
+    "name": "java.util.ArrayList",
+    "queryAllDeclaredMethods": true,
+    "methods": [
+      {
+        "name": "size",
+        "parameterTypes": []
+      }
+    ]
+  }
+]
